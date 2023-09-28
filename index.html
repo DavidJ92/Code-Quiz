@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JavaScript Quiz</title>
+</head>
+<header>
+    <div id="timer" style="position: absolute; top: 10px; right: 10px;">Time Left: <span id="time-left">75</span> seconds</div>
+</header>
+<body>
+    <div class="container">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+       
+        <button id="start-button">Start Quiz</button>
+     
+    </div>
+
+    <div class="quiz-container hide" id="question-container-1">
+        <h2 class="question">Question 1</h2>
+        <div class="answers">
+            <button class="answer-button">Answer 1</button>
+            <button class="answer-button">Answer 2</button>
+            <button class="answer-button">Answer 3</button>
+            <button class="answer-button">Answer 4</button>
+        </div>
+    </div>
+
+    <div class="quiz-container hide" id="question-container-2">
+        <h2 class="question">Question 2</h2>
+        <div class="answers">
+            <button class="answer-button">Answer 1</button>
+            <button class="answer-button">Answer 2</button>
+            <button class="answer-button">Answer 3</button>
+            <button class="answer-button">Answer 4</button>
+        </div>
+    </div>
+
+    <div class="quiz-container hide" id="question-container-3">
+        <h2 class="question">Question 3</h2>
+        <div class="answers">
+            <button class="answer-button">Answer 1</button>
+            <button class="answer-button">Answer 2</button>
+            <button class="answer-button">Answer 3</button>
+            <button class="answer-button">Answer 4</button>
+        </div>
+    </div>
+
+    <div class="quiz-container hide" id="question-container-4">
+        <h2 class="question">Question 4</h2>
+        <div class="answers">
+            <button class="answer-button">Answer 1</button>
+            <button class="answer-button">Answer 2</button>
+            <button class="answer-button">Answer 3</button>
+            <button class="answer-button">Answer 4</button>
+        </div>
+    </div>
+
+    <div class="quiz-container hide" id="question-container-5">
+        <h2 class="question">Question 5</h2>
+        <div class="answers">
+            <button class="answer-button">Answer 1</button>
+            <button class="answer-button">Answer 2</button>
+            <button class="answer-button">Answer 3</button>
+            <button class="answer-button">Answer 4</button>
+        </div>
+    </div>
+
+    <div class="score-container hide">
+        <h2>Score:</h2>
+        <h3>Correct: <span id="correct">0</span></h3>
+        <h3>Wrong: <span id="wrong">0</span></h3>
+    </div>
+
+    
+
+    <div class="game-over hide">
+        <h2>Game Over</h2>
+        <p>Your final score is <span id="final-score">0</span>.</p>
+        <input type="text" id="initials" placeholder="Enter your initials">
+        <button id="save-score">Save Score</button>
+    </div>
+
+     <!-- Display the highest score -->
+     <p>Highest Score: <span id="highest-score">0</span></p>
+     <p id="highest-score-with-initials">Highest Score: <span id="highest-score">0</span> by <span id="highest-score-initials">N/A</span></p>
+
+    
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
+
+
